@@ -1,0 +1,66 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["mpris"],
+    "modules-right": ["tray", "cpu", "custom/gpu", "custom/gpu-temp", "memory", "pulseaudio", "clock"],
+    "hyprland/workspaces": {
+      "persistent-workspaces": {
+        "DP-3": [ 1 ],
+        "DP-2": [ 2, 3 ]
+      }
+    },
+    "mpris": {
+      "format": "{player_icon} {status_icon} {dynamic}",
+      "format-paused": "{player_icon} {status_icon} {dynamic}",
+      "dynamic-len": 60,
+      "player-icons": {
+        "default": " ",
+        "firefox": "󰈹 "
+      },
+      "status-icons": {
+        "playing": " ",
+        "paused": " "
+      }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "cpu": {
+        "interval": 10,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/gpu": {
+      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+      "format": "󰊴 {}%",
+      "return-type": "",
+      "interval": 5
+
+    },
+    "custom/gpu-temp": {
+      "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+      "format": " {}°",
+      "return-type": "",
+      "interval": 5
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "clock": {
+        "timezone": "Europe/Paris",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%H:%M}"
+    }
+}

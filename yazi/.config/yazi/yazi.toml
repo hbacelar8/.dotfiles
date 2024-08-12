@@ -1,0 +1,8 @@
+# ~/.config/yazi/yazi.toml
+[manager]
+linemode = "mtime"
+show_symlink = true
+
+[opener]
+edit = [{ run = 'nvim "$@"', block = true }]
+play = [{ run = 'vlc "$@"', orphan = true }]
