@@ -12,6 +12,14 @@
   margin: 5px 5px;
 }
 
+tooltip {
+  background: @surface0;
+}
+
+tooltip label {
+  color: @text;
+}
+
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
