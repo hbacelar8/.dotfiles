@@ -1,14 +1,18 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": ["mpris"],
-    "modules-right": ["tray", "cpu", "custom/gpu", "custom/gpu-temp", "memory", "pulseaudio", "clock"],
+    "modules-right": ["cpu", "custom/gpu", "custom/gpu-temp", "memory", "pulseaudio", "clock"],
     "hyprland/workspaces": {
       "persistent-workspaces": {
         "DP-3": [ 1 ],
         "DP-2": [ 2, 3 ]
       }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
     },
     "mpris": {
       "format": "{player_icon} {status_icon} {dynamic}",
@@ -22,10 +26,6 @@
         "playing": " ",
         "paused": " "
       }
-    },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
     },
     "cpu": {
         "interval": 10,
