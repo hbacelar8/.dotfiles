@@ -21,9 +21,9 @@ return {
   {
     "MysticalDevil/inlay-hints.nvim",
     event = "LspAttach",
-    -- config = function()
-    --   require("inlay-hints").setup()
-    -- end,
+    config = function()
+      require("inlay-hints").setup()
+    end,
   },
 
   -- Rustaceanvim
@@ -31,9 +31,6 @@ return {
     "mrcjkb/rustaceanvim",
     version = "^5",
     lazy = false,
-    config = function()
-      require "configs.rustaceanvim"
-    end,
   },
 
   -- Treesitter
