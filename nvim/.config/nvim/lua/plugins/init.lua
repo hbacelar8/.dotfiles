@@ -26,6 +26,17 @@ return {
     end,
   },
 
+  -- Indentation
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    dependencies = { "HiPhish/rainbow-delimiters.nvim" },
+    main = "ibl",
+    opts = {},
+    config = function()
+      require "configs.indentation"
+    end,
+  },
+
   -- Rustaceanvim
   {
     "mrcjkb/rustaceanvim",
