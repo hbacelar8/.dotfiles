@@ -44,6 +44,15 @@ return {
     lazy = false,
   },
 
+  -- Crates Managing
+  {
+    "saecki/crates.nvim",
+    event = { "BufRead Cargo.toml" },
+    config = function()
+      require("crates").setup()
+    end,
+  },
+
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
