@@ -61,6 +61,6 @@
     "clock": {
         "timezone": "Europe/Paris",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "󱑒 {:%H:%M}"
+        "format": "󱑒 {:%R   %d/%m}"
     }
 }
