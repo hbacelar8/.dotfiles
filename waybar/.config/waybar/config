@@ -29,19 +29,19 @@
     },
     "cpu": {
         "interval": 10,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "custom/gpu": {
       "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
-      "format": "󰊴 {}%",
+      "format": "󰊴  {}%",
       "return-type": "",
       "interval": 5
 
     },
     "custom/gpu-temp": {
       "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
-      "format": " {}°",
+      "format": "  {}°",
       "return-type": "",
       "interval": 5
     },
@@ -52,15 +52,15 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
+        "format-muted": " ",
         "format-icons": {
-            "default": ["", "", " "]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
     "clock": {
         "timezone": "Europe/Paris",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "󱑒 {:%R   %d/%m}"
+        "format": "{:%d/%m | %R}"
     }
 }

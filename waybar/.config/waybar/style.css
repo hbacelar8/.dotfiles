@@ -2,7 +2,8 @@
 
 * {
   font-family: Fantasque Sans Mono;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
   min-height: 0;
 }
 
@@ -18,10 +19,11 @@ tooltip {
 
 tooltip label {
   color: @text;
+  font-weight: 500;
 }
 
 #workspaces {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin: 5px;
   background-color: @surface0;
   margin-left: 1rem;
@@ -29,18 +31,18 @@ tooltip label {
 
 #workspaces button {
   color: @lavender;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 0.6rem;
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #mpris,
@@ -52,13 +54,13 @@ tooltip label {
 #pulseaudio,
 #clock {
   background-color: @surface0;
-  padding: 0.5rem 0.7rem;
-  margin: 5px 0;
+  padding: 0.2rem 0.7rem;
+  margin: 5px 3px;
+  border-radius: 0.5rem;
 }
 
 #clock {
   color: @rosewater;
-  border-radius: 0px 1rem 1rem 0px;
   margin-right: 1rem;
 }
 
@@ -70,13 +72,6 @@ tooltip label {
   color: @yellow;
 }
 
-#pulseaudio,
-#memory,
-#custom-gpu,
-#custom-gpu-temp {
-  border-radius: 0;
-}
-
 #custom-gpu,
 #custom-gpu-temp {
   color: @green;
@@ -84,16 +79,15 @@ tooltip label {
 
 #cpu {
   color: @blue;
-  border-radius: 1rem 0px 0px 1rem;
 }
 
 #mpris {
   color: @mauve;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #tray {
   margin-right: 1rem;
-  margin-left: 1rem;
-  border-radius: 1rem;
+  margin-left: 5px;
+  border-radius: 0.5rem;
 }
