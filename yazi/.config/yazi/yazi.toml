@@ -6,3 +6,10 @@ show_symlink = true
 [opener]
 edit = [{ run = 'nvim "$@"', block = true }]
 play = [{ run = 'vlc "$@"', orphan = true }]
+image = [{ run = 'imv "$@"', orphan = true }]
+
+[open]
+prepend_rules = [
+    { name = "*.png", use = "image" },
+    { name = "*.jpg", use = "image" }
+]
