@@ -1,48 +1,41 @@
 @import "mocha.css";
 
 * {
-  font-family: Fantasque Sans Mono;
-  font-size: 14px;
-  font-weight: 600;
   min-height: 0;
+  min-width: 0;
+  font-family: "FantasqueSansM Nerd Font Propo";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #waybar {
   background: transparent;
   color: @text;
-  margin: 5px 5px;
 }
 
 tooltip {
-  background: @surface0;
-}
-
-tooltip label {
-  color: @text;
-  font-weight: 500;
+  background-color: @surface0;
+  border: 2px solid @mauve;
 }
 
 #workspaces {
-  border-radius: 0.5rem;
-  margin: 5px;
-  background-color: @surface0;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 #workspaces button {
+  padding: 0.1rem 0.6rem;
+  margin: 0.4rem 0.25rem 0rem 0.25rem;
+  border-radius: 4px;
   color: @lavender;
-  border-radius: 0.5rem;
-  padding: 0.6rem;
+  background-color: @surface0;
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 0.5rem;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 0.5rem;
 }
 
 #mpris,
@@ -52,16 +45,22 @@ tooltip label {
 #custom-gpu-temp,
 #memory,
 #pulseaudio,
-#clock {
+#custom-notification,
+#clock,
+#mpris,
+#tray {
+  padding: 0.1rem 0.6rem;
+  margin: 0.4rem 0.25rem 0rem 0.25rem;
+  border-radius: 4px;
   background-color: @surface0;
-  padding: 0.2rem 0.7rem;
-  margin: 5px 3px;
-  border-radius: 0.5rem;
 }
 
 #clock {
   color: @rosewater;
-  margin-right: 1rem;
+}
+
+#clock.simpleclock {
+  margin-right: 0.8rem;
 }
 
 #pulseaudio {
@@ -83,11 +82,4 @@ tooltip label {
 
 #mpris {
   color: @mauve;
-  border-radius: 0.5rem;
-}
-
-#tray {
-  margin-right: 1rem;
-  margin-left: 5px;
-  border-radius: 0.5rem;
 }

@@ -1,66 +1,122 @@
 {
-    "layer": "top",
-    "position": "top",
-    "modules-left": ["hyprland/workspaces", "tray"],
-    "modules-center": ["mpris"],
-    "modules-right": ["cpu", "custom/gpu", "custom/gpu-temp", "memory", "pulseaudio", "clock"],
-    "hyprland/workspaces": {
-      "persistent-workspaces": {
-        "DP-3": [ 1 ],
-        "DP-2": [ 2, 3 ]
-      }
-    },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    },
-    "mpris": {
-      "format": "{player_icon} {status_icon} {dynamic}",
-      "format-paused": "{player_icon} {status_icon} {dynamic}",
-      "dynamic-len": 60,
-      "player-icons": {
-        "default": " ",
-        "firefox": "󰈹 "
-      },
-      "status-icons": {
-        "playing": " ",
-        "paused": " "
-      }
-    },
-    "cpu": {
-        "interval": 10,
-        "format": "  {}%",
-        "max-length": 10
-    },
-    "custom/gpu": {
-      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
-      "format": "󰊴  {}%",
-      "return-type": "",
-      "interval": 5
-
-    },
-    "custom/gpu-temp": {
-      "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
-      "format": "  {}°",
-      "return-type": "",
-      "interval": 5
-    },
-    "memory": {
-        "interval": 30,
-        "format": "  {}%",
-        "max-length": 10
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": " ",
-        "format-icons": {
-            "default": [" ", " ", " "]
-        },
-        "on-click": "pavucontrol"
-    },
-    "clock": {
-        "timezone": "Europe/Paris",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d/%m | %R}"
+  "layer": "bottom",
+  "position": "top",
+  "spacing": 1,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "tray"
+  ],
+  "modules-center": [
+    "mpris"
+  ],
+  "modules-right": [
+    "custom/notification",
+    "cpu",
+    "custom/gpu",
+    "custom/gpu-temp",
+    "memory",
+    "pulseaudio",
+    "clock",
+    "clock#simpleclock"
+  ],
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "DP-3": [
+        1
+      ],
+      "DP-2": [
+        2,
+        3
+      ]
     }
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "mpris": {
+    "format": "{player_icon} {status_icon} {dynamic}",
+    "format-paused": "{player_icon} {status_icon} {dynamic}",
+    "dynamic-order": ["title", "artist", "album"],
+    "dynamic-len": 100,
+    "player-icons": {
+      "default": "",
+      "firefox": "󰈹",
+      "vlc": "󰕼"
+    },
+    "status-icons": {
+      "playing": "",
+      "paused": ""
+    }
+  },
+  "cpu": {
+    "interval": 10,
+    "format": " {usage}%",
+    "max-length": 10
+  },
+  "custom/gpu": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+    "format": "󰊴 {}%",
+    "return-type": "",
+    "interval": 5
+  },
+  "custom/gpu-temp": {
+    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+    "format": " {}°",
+    "return-type": "",
+    "interval": 5
+  },
+  "memory": {
+    "interval": 30,
+    "format": " {}%",
+    "max-length": 10
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": " {:%H:%M}"
+  },
+  "clock": {
+    "format": " {:L%a %d %b}",
+    "calendar": {
+      "format": {
+        "days": "<span weight='normal'>{}</span>",
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "today": "<span color='#f38ba8' weight='700'><u>{}</u></span>",
+        "weekdays": "<span color='#f5e0dc'><b>{}</b></span>",
+        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>"
+      },
+      "mode": "month",
+      "mode-mon-col": 1,
+      "on-scroll": 1
+    },
+    "tooltip-format": "<span color='#cdd6f4'><tt>{calendar}</tt></span>"
+  },
+  "custom/notification": {
+    "escape": true,
+    "exec": "swaync-client -swb",
+    "exec-if": "which swaync-client",
+    "format": "{icon}",
+    "format-icons": {
+      "none": "󰅺",
+      "notification": "󰡟"
+    },
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "return-type": "json",
+    "tooltip": false
+  }
 }
