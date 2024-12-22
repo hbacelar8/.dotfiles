@@ -8,8 +8,8 @@
     fg-col2: #f38ba8;
     grey: #6c7086;
 
-    width: 600;
-    font: "JetBrainsMono Nerd Font Medium 10";
+    width: 650;
+    font: "FantasqueSansM Nerd Font Propo Bold 12";
 }
 
 element-text, element-icon , mode-switcher {
@@ -19,8 +19,8 @@ element-text, element-icon , mode-switcher {
 
 window {
     height: 360px;
-    border: 2px;
-    border-radius: 4px;
+    border: 1px;
+    border-radius: 2px;
     border-color: @border-col;
     background-color: @bg-col;
 }
@@ -72,7 +72,7 @@ element {
 }
 
 element-icon {
-    size: 25px;
+    size: 20px;
 }
 
 element selected {
@@ -82,7 +82,7 @@ element selected {
 
 mode-switcher {
     spacing: 0;
-  }
+}
 
 button {
     padding: 10px;
