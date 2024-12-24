@@ -11,5 +11,6 @@ image = [{ run = 'imv "$@"', orphan = true }]
 [open]
 prepend_rules = [
     { name = "*.png", use = "image" },
-    { name = "*.jpg", use = "image" }
+    { name = "*.jpg", use = "image" },
+    { name = "*.jpeg", use = "image" }
 ]
