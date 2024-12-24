@@ -41,7 +41,7 @@
     "format": "{player_icon} {status_icon} {dynamic}",
     "format-paused": "{player_icon} {status_icon} {dynamic}",
     "dynamic-order": ["title", "artist", "album"],
-    "dynamic-len": 100,
+    "dynamic-len": 90,
     "player-icons": {
       "default": "",
       "firefox": "󰈹",
