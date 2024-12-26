@@ -3,62 +3,97 @@
 Personal dotfiles for [Hyprland](https://hyprland.org/) and Catppuccin Mocha
 based theme.
 
+| ![Image 1](screenshots/all.png)       | ![Image 2](screenshots/all2.png)    |
+|---------------------------------------|-------------------------------------|
+| ![Image 3](screenshots/launcher.png)  | ![Image 4](screenshots/screen1.png) |
+
+<details>
+  <summary>Portrait Monitor</summary>
+
+  ![Image 4](screenshots/screen2.png)
+
+</details>
+
 ## Dependencies
 
-### AUR Helper
+<details>
+  <summary>AUR Helper</summary>
 
-```bash
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
+  ```bash
+  sudo pacman -S --needed base-devel
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
+  makepkg -si
+  ```
 
-### Fonts
+</details>
 
-```bash
-sudo pacman -S ttf-fantasque-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
-```
+<details>
+  <summary>Fonts</summary>
 
-### GTK Theme
+  ```bash
+  sudo pacman -S ttf-fantasque-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
+  ```
 
-```bash
-paru -S catppuccin-gtk-theme-mocha
-```
+</details>
 
-### Hypr Ecosystem
+<details>
+  <summary>GTK Theme</summary>
 
-```bash
-sudo pacman -S hyprland hyprpaper hyprlock xdg-desktop-portal-hyprland hyprutils
-```
+  ```bash
+  paru -S catppuccin-gtk-theme-mocha
+  ```
 
-```bash
-paru -S hyprshot
-```
+</details>
 
-### UI
+<details>
+  <summary>Hypr Ecosystem</summary>
 
-```bash
-sudo pacman -S waybar rofi-wayland swaync
-```
+  ```bash
+  sudo pacman -S hyprland hyprpaper hyprlock xdg-desktop-portal-hyprland hyprutils
+  ```
 
-### Terminal Emulator
+  ```bash
+  paru -S hyprshot
+  ```
 
-```bash
-sudo pacman -S wezterm
-```
+</details>
 
-### File Managers
+<details>
+  <summary>UI</summary>
 
-```bash
-sudo pacman -S yazi nautilus
-```
+  ```bash
+  sudo pacman -S waybar rofi-wayland swaync
+  ```
 
-### Misc
+</details>
 
-```bash
-sudo pacman -S fastfetch btop imv neovim lazygit
-```
+<details>
+  <summary>Terminal Emulator</summary>
+
+  ```bash
+  sudo pacman -S wezterm
+  ```
+
+</details>
+
+<details>
+  <summary>File Managers</summary>
+
+  ```bash
+  sudo pacman -S yazi nautilus
+  ```
+
+</details>
+
+<details>
+  <summary>Misc</summary>
+
+  ```bash
+  sudo pacman -S fastfetch btop imv neovim lazygit
+  ```
+
+</details>
 
 ## Installation
 
