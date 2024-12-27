@@ -41,8 +41,18 @@ based theme.
   <summary>GTK Theme</summary>
 
   ```bash
-  paru -S catppuccin-gtk-theme-mocha
+  paru -S catppuccin-gtk-theme-mocha xdg-desktop-portal-gtk
   ```
+
+  ---
+  **_NOTE:_**
+
+  For configuring the GTK theme:
+
+  ```bash
+  echo -e "[preferred]\ndefault=hyprland;gtk" /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  ```
+  ---
 
 </details>
 
@@ -108,5 +118,5 @@ cd && git clone git@github.com:hbacelar8/.dotfiles.git
 In the .dotfiles directory, stow every config:
 
 ```bash
-stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar wezterm yazi
+stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar wezterm yazi zsh
 ```
