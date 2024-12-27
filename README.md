@@ -29,10 +29,10 @@ based theme.
 </details>
 
 <details>
-  <summary>Fonts</summary>
+  <summary>Fonts and Icons</summary>
 
   ```bash
-  sudo pacman -S ttf-fantasque-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
+  sudo pacman -S ttf-fantasque-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols papirus-icon-theme
   ```
 
 </details>
@@ -41,8 +41,18 @@ based theme.
   <summary>GTK Theme</summary>
 
   ```bash
-  paru -S catppuccin-gtk-theme-mocha
+  paru -S catppuccin-gtk-theme-mocha xdg-desktop-portal-gtk
   ```
+
+  ---
+  **_NOTE:_**
+
+  For configuring the GTK theme
+
+  ```bash
+  echo -e "[preferred]\ndefault=hyprland;gtk" /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  ```
+  ---
 
 </details>
 
@@ -84,6 +94,16 @@ based theme.
   sudo pacman -S yazi nautilus
   ```
 
+  ---
+  **_NOTE:_**
+
+  For MTP to be shown on Nautilus
+
+  ```bash
+  sudo pacman -S gvfs-mtp
+  ```
+  ---
+
 </details>
 
 <details>
@@ -108,5 +128,5 @@ cd && git clone git@github.com:hbacelar8/.dotfiles.git
 In the .dotfiles directory, stow every config:
 
 ```bash
-stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar wezterm yazi
+stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar wezterm yazi zsh
 ```
