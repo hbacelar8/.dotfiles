@@ -14,6 +14,28 @@ based theme.
 
 </details>
 
+## Key Bindings
+
+| Keybind                       | Action                              |
+|-------------------------------|-------------------------------------|
+| SUPER + T                     | Open terminal (Wezterm)             |
+| SUPER + C                     | Kill active window                  |
+| SUPER + V                     | Toggle floating                     |
+| SUPER + P                     | Toggle pseudo                       |
+| SUPER + J                     | Swap split direction                |
+| SUPER + A                     | Swap split positions                |
+| SUPER + B                     | Open browser (Firefox)              |
+| SUPER + L                     | Lock screen (Hyprlock)              |
+| SUPER + Q                     | Open notifications panel            |
+| SUPER + SHIFT + S             | Run Hyprshot region mode            |
+| SUPER + Space                 | Open app launcher (Rofi)            |
+| SUPER + M                     | Open emoji selector (Rofimoji)      |
+| SUPER + [Arrow Keys]          | Move window focus                   |
+| SUPER + [0-9]                 | Switch between workspaces           |
+| SUPER + SHIFT + [0-9]         | Move active window to a workspace   |
+| SUPER + [Left Mouse Button]   | Drag to move window                 |
+| SUPER + [Right Mouse Button]  | Drag to resize window               |
+
 ## Dependencies
 
 <details>
@@ -41,18 +63,12 @@ based theme.
   <summary>GTK Theme</summary>
 
   ```bash
-  paru -S catppuccin-gtk-theme-mocha xdg-desktop-portal-gtk
+  sudo pacman -S xdg-desktop-portal-gtk
   ```
-
-  ---
-  **_NOTE:_**
-
-  For configuring the GTK theme
 
   ```bash
-  echo -e "[preferred]\ndefault=hyprland;gtk" /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  paru -S catppuccin-gtk-theme-mocha
   ```
-  ---
 
 </details>
 
@@ -73,7 +89,7 @@ based theme.
   <summary>UI</summary>
 
   ```bash
-  sudo pacman -S waybar rofi-wayland swaync
+  sudo pacman -S waybar rofi-wayland swaync rofimoji
   ```
 
 </details>
@@ -110,7 +126,7 @@ based theme.
   <summary>Misc</summary>
 
   ```bash
-  sudo pacman -S fastfetch btop imv neovim lazygit
+  sudo pacman -S fastfetch btop imv neovim lazygit udiskie
   ```
 
 </details>
