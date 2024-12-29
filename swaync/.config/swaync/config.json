@@ -38,6 +38,10 @@
             "exec": "echo 'Do something actionable!'",
             "urgency": "Normal",
             "run-on": "action"
+        },
+        "sound-script": {
+            "exec": "/home/bacelar/.dotfiles/swaync/.config/swaync/sound.sh",
+            "app-name": ".*"
         }
     },
     "notification-visibility": {
