@@ -25,11 +25,11 @@
   ],
   "hyprland/workspaces": {
     "persistent-workspaces": {
-      "DP-3": [
+      "DP-2": [
         1,
         2
       ],
-      "DP-2": [
+      "DP-1": [
         3,
         4
       ]
