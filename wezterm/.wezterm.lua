@@ -9,8 +9,8 @@ config.color_scheme = "Catppuccin Mocha"
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
-config.font_size = 10.0
+config.font = wezterm.font("FantasqueSansM Nerd Font Propo")
+config.font_size = 11.0
 config.enable_wayland = false
 
 config.keys = {
