@@ -85,7 +85,7 @@
         ""
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pwvucontrol"
   },
   "clock#simpleclock": {
     "tooltip": false,
