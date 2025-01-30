@@ -1,5 +1,6 @@
 # ~/.config/yazi/yazi.toml
 [manager]
+ratio = [1, 3, 3]
 linemode = "mtime"
 show_symlink = true
 
@@ -7,10 +8,12 @@ show_symlink = true
 edit = [{ run = 'nvim "$@"', block = true }]
 play = [{ run = 'vlc "$@"', orphan = true }]
 image = [{ run = 'imv "$@"', orphan = true }]
+pdf = [{ run = 'evince "$@"', orphan = true }]
 
 [open]
 prepend_rules = [
     { name = "*.png", use = "image" },
     { name = "*.jpg", use = "image" },
-    { name = "*.jpeg", use = "image" }
+    { name = "*.jpeg", use = "image" },
+    { name = "*.pdf", use = "pdf" },
 ]
