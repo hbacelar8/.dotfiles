@@ -1,5 +1,24 @@
-[plugin]
-deps = [{ use = "yazi-rs/plugins:full-border", rev = "71c4fc2" }, { use = "yazi-rs/plugins:no-status", rev = "71c4fc2" }, { use = "yazi-rs/plugins:hide-preview", rev = "71c4fc2" }, { use = "imsi32/yatline", rev = "9328205" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "71c4fc2"
+hash = "a61bb2d21a08bf1d18f0a549e5eb1475"
 
-[flavor]
-deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "8458d25" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:no-status"
+rev = "71c4fc2"
+hash = "26907959d4d45f6258487f9bfe54a9c4"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:hide-preview"
+rev = "71c4fc2"
+hash = "5be5885898ca9df783bdec0d402bf4b0"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "9328205"
+hash = "3e51d1fd8a2e481fcfa8eab1251d1c5f"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "8458d25"
+hash = "44ab3265147788a4e780b2060341d65e"
