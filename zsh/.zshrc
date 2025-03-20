@@ -123,3 +123,9 @@ function y() {
     fi
     rm -f -- "$tmp"
 }
+
+# Created by `pipx` on 2025-02-08 21:49:11
+export PATH="$PATH:/home/bacelar/.local/bin"
+
+# Pyenv
+eval "$(pyenv init -)"
