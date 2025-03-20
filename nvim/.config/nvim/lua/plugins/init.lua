@@ -6,6 +6,15 @@ return {
     opts = require "configs.conform",
   },
 
+  -- Nvim Tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+    opts = function()
+      return require "configs.nvimtree"
+    end,
+  },
+
   -- LSP Config
   {
     "neovim/nvim-lspconfig",
@@ -22,7 +31,7 @@ return {
     "hedyhli/outline.nvim",
     lazy = true,
     cmd = { "Outline", "OutlineOpen" },
-    keys = { -- Example mapping to toggle outline
+    keys = {
       { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
     },
     config = function()
@@ -37,6 +46,15 @@ return {
     lazy = false,
     keys = {
       { "<leader>rem", "<cmd>RustLsp expandMacro<cr>", desc = "Rust Expand Macro" },
+    },
+  },
+
+  {
+    "danymat/neogen",
+    lazy = false,
+    config = true,
+    keys = {
+      { "<leader>do", "<cmd>:lua require('neogen').generate()<CR><cmd>", desc = "Doxygen generate" },
     },
   },
 
@@ -101,13 +119,17 @@ return {
     event = "BufReadPre",
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "c",
+        "cpp",
+        "rust",
+      },
+    },
+  },
 }

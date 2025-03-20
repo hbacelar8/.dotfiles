@@ -2,6 +2,9 @@ local configs = require "nvchad.configs.lspconfig"
 local map = vim.keymap.set
 
 local servers = {
+  cmake = {
+    on_attach = configs.on_attach,
+  },
   clangd = {
     on_attach = function(client, bufnr)
       client.server_capabilities.signatureHelpProvider = false
