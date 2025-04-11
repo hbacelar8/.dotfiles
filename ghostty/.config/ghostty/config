@@ -1,0 +1,9 @@
+font-family = FantasqueSansM Nerd Font Propo
+font-size = 11.0
+theme = catppuccin-mocha
+background-opacity = 0.95
+background-blur = true
+custom-shader = shaders/bettercrt.glsl
+custom-shader = shaders/bloom.glsl
+
+keybind = ctrl+alt+a=toggle_fullscreen
