@@ -124,6 +124,9 @@ function y() {
     rm -f -- "$tmp"
 }
 
+# Zellij
+eval "$(zellij setup --generate-auto-start zsh)"
+
 # Created by `pipx` on 2025-02-08 21:49:11
 export PATH="$PATH:/home/bacelar/.local/bin"
 
