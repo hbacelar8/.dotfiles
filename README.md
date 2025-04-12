@@ -18,7 +18,7 @@ based theme.
 
 | Keybind                       | Action                              |
 |-------------------------------|-------------------------------------|
-| SUPER + T                     | Open terminal (Wezterm)             |
+| SUPER + T                     | Open terminal (Ghostty)             |
 | SUPER + C                     | Kill active window                  |
 | SUPER + V                     | Toggle floating                     |
 | SUPER + P                     | Toggle pseudo                       |
@@ -54,7 +54,7 @@ based theme.
   <summary>Fonts and Icons</summary>
 
   ```bash
-  sudo pacman -S ttf-fantasque-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols papirus-icon-theme
+  sudo pacman -S ttf-fantasque-nerd ttf-nerd-fonts-symbols papirus-icon-theme
   ```
 
 </details>
@@ -98,7 +98,7 @@ based theme.
   <summary>Terminal Emulator</summary>
 
   ```bash
-  sudo pacman -S wezterm
+  sudo pacman -S ghostty zellij
   ```
 
 </details>
@@ -144,5 +144,5 @@ cd && git clone git@github.com:hbacelar8/.dotfiles.git
 In the .dotfiles directory, stow every config:
 
 ```bash
-stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar wezterm yazi zsh
+stow btop fastfetch hypr imv lazygit nvim rofi swaync waybar ghostty zellij yazi zsh
 ```
