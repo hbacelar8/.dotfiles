@@ -9,8 +9,7 @@
 }
 
 #waybar {
-  /* background: transparent; */
-  background-color: rgba(49, 50, 68, 0.7);
+  background-color: @crust;
   color: @text;
 }
 
@@ -19,20 +18,27 @@ tooltip {
   border: 2px solid @mauve;
 }
 
+#custom-logo {
+  margin: 0.5rem 0.6rem 0.5rem 0.6rem;
+  color: @sapphire;
+}
+
 #workspaces {
-  margin-left: 0.5rem;
+  margin: 0.4rem 0.2rem 0.4rem 0.2rem;
+  background-color: @surface0;
+  border-radius: 4px;
 }
 
 #workspaces button {
   padding: 0.2rem 0.6rem;
-  margin: 0.4rem 0.2rem 0.4rem 0.2rem;
-  border-radius: 4px;
+  border-radius: 0px;
   color: @lavender;
-  background-color: @mantle;
 }
 
 #workspaces button.active {
   color: @sky;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
 }
 
 #workspaces button:hover {
@@ -53,7 +59,7 @@ tooltip {
   padding: 0.2rem 0.6rem;
   margin: 0.4rem 0.2rem 0.4rem 0.2rem;
   border-radius: 4px;
-  background-color: @mantle;
+  background-color: @surface0;
 }
 
 #clock {
@@ -61,7 +67,7 @@ tooltip {
 }
 
 #clock.simpleclock {
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
 }
 
 #pulseaudio {
@@ -81,6 +87,10 @@ tooltip {
   color: @blue;
 }
 
+#custom-notification {
+  color: @flamingo;
+}
+
 #mpris {
-  color: @lavender;
+  color: @mauve;
 }
