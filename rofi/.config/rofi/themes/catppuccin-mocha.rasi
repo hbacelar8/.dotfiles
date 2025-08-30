@@ -9,7 +9,7 @@
     red: #ea6962;
 
     background-color: @bg0;
-    font: "FantasqueSansM Nerd Font Propo Bold 12";
+    font: "IosevkaTerm Nerd Font Propo Bold 12";
 }
 
 window {
