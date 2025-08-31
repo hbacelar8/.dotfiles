@@ -1,0 +1,21 @@
+[core]
+	editor = nvim -f
+[alias]
+  s = status
+  lg = log --oneline --graph --pretty='%C(auto)%h %Cgreen[%ad]%C(auto)%d %s %Cblue(%an)' --date=format-local:'%d-%m-%Y %H:%M:%S'
+  l = log --oneline --pretty='%C(auto)%h %Cgreen[%ad]%C(auto)%d %s %Cblue(%an)' --date=format-local:'%d-%m-%Y %H:%M:%S'
+  ba = branch -a
+  c = checkout
+  fp = fetch --prune
+  cb = checkout -b
+  sh = stash
+	rv = remote -v
+  sp = stash pop
+  cane = commit --amend --no-edit
+  ri = rebase -i
+  pff = push -f
+  rH = reset --hard
+  rh = reset HEAD^
+  bd = branch -d
+  sl = stash list
+  shu = stash -u
