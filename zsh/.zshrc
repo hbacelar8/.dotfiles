@@ -132,3 +132,6 @@ export PATH="$PATH:/home/bacelar/.local/bin"
 
 # Pyenv
 eval "$(pyenv init -)"
+
+# Fzf
+export FZF_DEFAULT_OPTS="--layout reverse --border --preview 'bat --style=numbers --color=always --line-range :500 {}'"
