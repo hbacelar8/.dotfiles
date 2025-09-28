@@ -30,7 +30,7 @@ based theme.
 | SUPER + SHIFT + S             | Run Hyprshot region mode            |
 | SUPER + Space                 | Open app launcher (Rofi)            |
 | SUPER + M                     | Open emoji selector (Rofimoji)      |
-| SUPER + [Arrow Keys]          | Move window focus                   |
+| SUPER + SHIFT + [h/j/k/l]     | Move window focus                   |
 | SUPER + [0-9]                 | Switch between workspaces           |
 | SUPER + SHIFT + [0-9]         | Move active window to a workspace   |
 | SUPER + [Left Mouse Button]   | Drag to move window                 |
