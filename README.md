@@ -3,16 +3,7 @@
 Personal dotfiles for [Hyprland](https://hyprland.org/) and Catppuccin Mocha
 based theme.
 
-| ![Image 1](screenshots/all.png)       | ![Image 2](screenshots/all2.png)    |
-|---------------------------------------|-------------------------------------|
-| ![Image 3](screenshots/launcher.png)  | ![Image 4](screenshots/screen1.png) |
-
-<details>
-  <summary>Portrait Monitor</summary>
-
-  ![Image 4](screenshots/screen2.png)
-
-</details>
+![pic](./screenshots/pic1.png)
 
 ## Key Bindings
 
