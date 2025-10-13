@@ -283,7 +283,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "catppuccin-mocha"
+theme "rose-pine"
  
 // Choose the base input mode of zellij.
 // Default: normal

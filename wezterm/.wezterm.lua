@@ -4,8 +4,10 @@ local wezterm = require("wezterm")
 -- This will hold the configuration
 local config = wezterm.config_builder()
 
+local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
+
 -- Apply the config choices
-config.color_scheme = "Catppuccin Mocha"
+config.colors = theme.colors()
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"

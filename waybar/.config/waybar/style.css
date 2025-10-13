@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "./colors/rose-pine.css";
 
 * {
   min-height: 0;
@@ -9,40 +9,40 @@
 }
 
 #waybar {
-  background-color: @crust;
+  background-color: @base;
   color: @text;
 }
 
 tooltip {
-  background-color: @surface0;
-  border: 2px solid @mauve;
+  background-color: @overlay;
+  border: 2px solid @rose;
 }
 
 #custom-logo {
   margin: 0.5rem 0.6rem 0.5rem 0.6rem;
-  color: @sapphire;
+  color: @rose;
 }
 
 #workspaces {
   margin: 0.4rem 0.2rem 0.4rem 0.2rem;
-  background-color: @surface0;
+  background-color: @overlay;
   border-radius: 4px;
 }
 
 #workspaces button {
   padding: 0.2rem 0.6rem;
   border-radius: 0px;
-  color: @lavender;
+  color: @subtle;
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: @foam;
   padding-right: 1.3rem;
   padding-left: 1.3rem;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
+  color: @iris;
 }
 
 #mpris,
@@ -59,11 +59,11 @@ tooltip {
   padding: 0.2rem 0.6rem;
   margin: 0.4rem 0.2rem 0.4rem 0.2rem;
   border-radius: 4px;
-  background-color: @surface0;
+  background-color: @overlay;
 }
 
 #clock {
-  color: @rosewater;
+  color: @rose;
 }
 
 #clock.simpleclock {
@@ -71,26 +71,26 @@ tooltip {
 }
 
 #pulseaudio {
-  color: @teal;
+  color: @iris;
 }
 
 #memory {
-  color: @yellow;
+  color: @love;
 }
 
 #custom-gpu,
 #custom-gpu-temp {
-  color: @green;
+  color: @pine;
 }
 
 #cpu {
-  color: @blue;
+  color: @gold;
 }
 
 #custom-notification {
-  color: @flamingo;
+  color: @rose;
 }
 
 #mpris {
-  color: @mauve;
+  color: @rose;
 }
