@@ -1,16 +1,11 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.mini-surround",
-    "lazyvim.plugins.extras.editor.fzf",
-    "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.outline",
-    "lazyvim.plugins.extras.lang.clangd",
-    "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.toml",
-    "lazyvim.plugins.extras.ui.indent-blankline",
-    "lazyvim.plugins.extras.util.dot"
+    "lazyvim.plugins.extras.ui.mini-indentscope"
   ],
   "install_version": 8,
   "news": {
