@@ -41,7 +41,8 @@ CONFIG_FOLDERS=(
   wezterm
   yazi
   zellij
-  zsh
+  fish
+  starship
 )
 
 echo ">>> Stowing configuration folders..."
@@ -93,7 +94,6 @@ FONT_ICON_PACKAGES=(
   noto-fonts-cjk
   noto-fonts-emoji
   noto-fonts
-  papirus-icon-theme
 )
 
 # UI packages
@@ -108,6 +108,8 @@ UI_PACKAGES=(
 TERMINAL_PACKAGES=(
   wezterm
   zellij
+  fish
+  starship
 )
 
 # TUI applications
@@ -127,6 +129,7 @@ MISC_PACKAGES=(
   gvfs-mtp
   imv
   udiskie
+  nwg-look
 )
 
 # Track results for summary
@@ -182,12 +185,12 @@ install_themes() {
   fi
 
   # Paru package
-  if paru -Qi catppuccin-gtk-theme-mocha &>/dev/null; then
-    echo "✅ catppuccin-gtk-theme-mocha is already installed."
+  if paru -Qi rose-pine-gtk-theme-full &>/dev/null; then
+    echo "✅ rose-pine-gtk-theme-full is already installed."
     SUMMARY["Themes"]="${SUMMARY["Themes"]} + ✔️ Already up to date"
   else
-    echo "📦 Installing catppuccin-gtk-theme-mocha with paru..."
-    paru -S --noconfirm catppuccin-gtk-theme-mocha
+    echo "📦 Installing rose-pine-gtk-theme-full with paru..."
+    paru -S --noconfirm rose-pine-gtk-theme-full
     SUMMARY["Themes"]="✅ Installed"
   fi
 
