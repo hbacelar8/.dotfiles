@@ -7,3 +7,6 @@ fish_config theme choose rose-pine
 
 # Init starship
 starship init fish | source
+
+# Init zoxide
+zoxide init fish | source
