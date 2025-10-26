@@ -51,7 +51,7 @@ On resizing mode:
 | **Fonts and icon themes**      | ttf-iosevkaterm-nerd, ttf-nerd-fonts-symbols, noto-fonts-cjk, noto-fonts-emoji, noto-fonts |
 | **UI packages**                | waybar, rofi, swaync, rofimoji                                                             |
 | **Terminal emulators**         | wezterm, zellij, fish, starship                                                            |
-| **TUI applications**           | yazi, fastfetch, btop, lazygit, bat, fzf, ripgrep                                          |
+| **TUI applications**           | yazi, fastfetch, btop, lazygit, bat, fzf, ripgrep, zoxide                                  |
 | **Miscellaneous tools**        | nautilus, gvfs-mtp, imv, udiskie, nwg-look                                                 |
 | **Themes (pacman + paru)**     | xdg-desktop-portal-gtk, rose-pine-gtk-theme-full                                           |
 

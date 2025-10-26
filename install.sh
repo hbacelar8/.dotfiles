@@ -121,6 +121,7 @@ TUI_PACKAGES=(
   bat
   fzf
   ripgrep
+  zoxide
 )
 
 # Miscellaneous packages (stow removed)
