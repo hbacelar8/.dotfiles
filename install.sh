@@ -7,7 +7,7 @@ START_TIME=$(date +%s)
 
 echo ">>> Checking for root privileges..."
 if [[ $EUID -ne 0 ]]; then
-  echo "❌ Please run this script with sudo or as root."
+  echo "Please run this script with sudo or as root."
   exit 1
 fi
 
@@ -16,9 +16,9 @@ pacman -Syu --noconfirm
 
 # Install stow first so it can be used immediately
 if pacman -Qi stow &>/dev/null; then
-  echo "✅ stow is already installed."
+  echo "stow is already installed."
 else
-  echo "📦 Installing stow..."
+  echo "Installing stow..."
   pacman -S --noconfirm stow
 fi
 
@@ -49,10 +49,10 @@ echo ">>> Stowing configuration folders..."
 pushd "$SCRIPT_DIR" >/dev/null
 for folder in "${CONFIG_FOLDERS[@]}"; do
   if [[ -d "$folder" ]]; then
-    echo "🗂️  Stowing $folder..."
+    echo "  Stowing $folder..."
     stow "$folder"
   else
-    echo "⚠️ Config folder '$folder' not found, skipping."
+    echo " Config folder '$folder' not found, skipping."
   fi
 done
 popd >/dev/null
@@ -60,7 +60,7 @@ popd >/dev/null
 # Function to install paru from AUR if not installed
 install_paru() {
   if command -v paru &>/dev/null; then
-    echo "✅ paru is already installed."
+    echo "paru is already installed."
   else
     echo ">>> paru not found. Installing paru from AUR..."
     # Install prerequisites first
@@ -146,18 +146,18 @@ install_packages() {
   echo ">>> Installing $section..."
   for pkg in "${packages[@]}"; do
     if pacman -Qi "$pkg" &>/dev/null; then
-      echo "✅ $pkg is already installed."
+      echo "$pkg is already installed."
     else
-      echo "📦 Installing $pkg..."
+      echo "Installing $pkg..."
       pacman -S --noconfirm "$pkg"
       installed_new=true
     fi
   done
 
   if $installed_new; then
-    SUMMARY["$section"]="✅ Installed"
+    SUMMARY["$section"]="Installed"
   else
-    SUMMARY["$section"]="✔️ Already up to date"
+    SUMMARY["$section"]="Already up to date"
   fi
 }
 
@@ -178,26 +178,26 @@ install_themes() {
 
   # Pacman package
   if pacman -Qi xdg-desktop-portal-gtk &>/dev/null; then
-    echo "✅ xdg-desktop-portal-gtk is already installed."
+    echo "xdg-desktop-portal-gtk is already installed."
   else
-    echo "📦 Installing xdg-desktop-portal-gtk with pacman..."
+    echo "Installing xdg-desktop-portal-gtk with pacman..."
     pacman -S --noconfirm xdg-desktop-portal-gtk
-    SUMMARY["Themes"]="✅ Installed"
+    SUMMARY["Themes"]="Installed"
   fi
 
   # Paru package
   if paru -Qi rose-pine-gtk-theme-full &>/dev/null; then
-    echo "✅ rose-pine-gtk-theme-full is already installed."
+    echo "rose-pine-gtk-theme-full is already installed."
     SUMMARY["Themes"]="${SUMMARY["Themes"]} + ✔️ Already up to date"
   else
-    echo "📦 Installing rose-pine-gtk-theme-full with paru..."
+    echo "Installing rose-pine-gtk-theme-full with paru..."
     paru -S --noconfirm rose-pine-gtk-theme-full
-    SUMMARY["Themes"]="✅ Installed"
+    SUMMARY["Themes"]="Installed"
   fi
 
   # If neither installed new, mark accordingly
   if [[ -z "${SUMMARY["Themes"]}" ]]; then
-    SUMMARY["Themes"]="✔️ Already up to date"
+    SUMMARY["Themes"]="Already up to date"
   fi
 }
 
@@ -212,18 +212,18 @@ SECONDS=$((DURATION % 60))
 # Final summary output
 echo ""
 echo "==============================="
-echo "✅ Installation Summary:"
+echo "Installation Summary:"
 echo "==============================="
 for key in "${!SUMMARY[@]}"; do
   printf "• %-35s %s\n" "$key" "${SUMMARY[$key]}"
 done
 echo "==============================="
-echo "🕒 Time taken: ${MINUTES}m ${SECONDS}s"
-echo "🎉 Setup completed successfully!"
+echo "Time taken: ${MINUTES}m ${SECONDS}s"
+echo "Setup completed successfully!"
 
 # Optional reboot prompt
 echo ""
-read -rp "🔄 Would you like to reboot now? [y/N]: " REBOOT_ANSWER
+read -rp "Would you like to reboot now? [y/N]: " REBOOT_ANSWER
 if [[ "$REBOOT_ANSWER" =~ ^[Yy]$ ]]; then
   echo "Rebooting..."
   reboot
