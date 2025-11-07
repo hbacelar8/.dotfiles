@@ -52,6 +52,14 @@ config.keys = {
 	},
 }
 
+for i = 1, 9 do
+	table.insert(config.keys, {
+		key = tostring(i),
+		mods = "ALT",
+		action = wezterm.action.ActivateTab(i - 1),
+	})
+end
+
 -- Style tabs
 function tab_title(tab_info)
 	local title = tab_info.tab_title
