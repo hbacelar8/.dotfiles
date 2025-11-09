@@ -1,7 +1,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+$os\
+$shell\
 $username\
+$hostname\
 $directory\
 $git_branch\
 $git_status\
@@ -33,6 +36,20 @@ rose = '#ebbcba'
 pine = '#31748f'
 foam = '#9ccfd8'
 iris = '#c4a7e7'
+
+[os]
+format = "[](fg:overlay)[ $symbol ]($style)"
+style = "bg:overlay fg:foam"
+disabled = false
+
+[os.symbols]
+Arch = "󰣇"
+
+[shell]
+format = "[ $indicator ]($style)[](fg:overlay) "
+fish_indicator = "󰈺"
+style = "bg:overlay fg:rose"
+disabled = false
 
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "
@@ -83,6 +100,12 @@ format = "[](fg:overlay)[ 󰧱 $user ]($style)[](fg:overlay) "
 show_always = true
 style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
+
+[hostname]
+ssh_only = true
+format = "[](fg:overlay)[ $ssh_symbol $hostname ]($style)[](fg:overlay) "
+style = "bg:overlay fg:iris"
+disabled = false
 
 # Languages
 
