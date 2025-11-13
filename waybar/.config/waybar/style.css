@@ -31,6 +31,7 @@ tooltip {
 
 #workspaces button {
   padding: 0.2rem 0.6rem;
+  border-bottom: 2px solid @subtle;
   border-radius: 0px;
   color: @subtle;
 }
