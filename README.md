@@ -1,9 +1,8 @@
 # Dotfiles
 
-Personal dotfiles for [Hyprland](https://hyprland.org/) and Catppuccin Mocha
-based theme.
+Personal dotfiles for [Hyprland](https://hyprland.org/) and Rosé Pine based theme.
 
-![pic](./screenshots/pic1.png)
+![pic](./screenshots/screenshot.png)
 
 ## Key Bindings
 
