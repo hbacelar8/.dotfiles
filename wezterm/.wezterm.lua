@@ -12,7 +12,7 @@ config.colors = theme.colors()
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
-config.font = wezterm.font("IosevkaTerm Nerd Font Propo", { weight = "Bold" })
+config.font = wezterm.font("IosevkaTermSlab Nerd Font Propo", { weight = "Bold" })
 config.font_size = 11.0
 config.enable_wayland = false
 
