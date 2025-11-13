@@ -8,7 +8,6 @@ $hostname\
 $directory\
 $git_branch\
 $git_status\
-$fill\
 $c\
 $elixir\
 $elm\
@@ -22,6 +21,7 @@ $rust\
 $scala\
 $conda\
 $python\
+$fill\
 $time\n  \
 [󱞪](fg:iris) \
 """
@@ -77,7 +77,7 @@ disabled = false
 style = "bg:overlay fg:love"
 format = '[](fg:overlay)([$all_status$ahead_behind]($style))[](fg:overlay) '
 up_to_date = '[ ✓ ](bg:overlay fg:iris)'
-untracked = '[?\($count\)](bg:overlay fg:gold)'
+untracked = '[?\($count\)](bg:overlay fg:love)'
 stashed = '[\$](bg:overlay fg:iris)'
 modified = '[!\($count\)](bg:overlay fg:gold)'
 renamed = '[»\($count\)](bg:overlay fg:iris)'
@@ -89,21 +89,21 @@ behind = '[⇣\(${count}\)](bg:overlay fg:rose)'
 
 [time]
 disabled = false
-format = " [](fg:overlay)[ $time 󰴈 ]($style)[](fg:overlay)"
+format = " [](fg:overlay)[ $time  ]($style)[](fg:overlay)"
 style = "bg:overlay fg:rose"
 time_format = "%I:%M%P"
 use_12hr = true
 
 [username]
 disabled = false
-format = "[](fg:overlay)[ 󰧱 $user ]($style)[](fg:overlay) "
+format = "[](fg:overlay)[   $user ]($style)[](fg:overlay) "
 show_always = true
 style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
 
 [hostname]
 ssh_only = true
-ssh_symbol = "󰢹 "
+ssh_symbol = "󱓞 "
 format = "[](fg:overlay)[ $ssh_symbol $hostname ]($style)[](fg:overlay) "
 style = "bg:overlay fg:iris"
 disabled = false
