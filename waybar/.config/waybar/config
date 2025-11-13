@@ -72,7 +72,7 @@
   },
   "custom/gpu-temp": {
     "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
-    "format": " {}°",
+    "format": " {}°",
     "return-type": "",
     "interval": 5
   },
@@ -95,7 +95,7 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}"
+    "format": " {:%H:%M}"
   },
   "clock": {
     "format": " {:L%a %d %b}",
