@@ -54,7 +54,7 @@ disabled = false
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "
 style = "bg:overlay fg:pine"
-truncation_length = 3
+truncation_length = 5
 truncation_symbol = "…/"
 
 [directory.substitutions]
