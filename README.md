@@ -9,21 +9,26 @@ Personal dotfiles for [Hyprland](https://hyprland.org/) and Rosé Pine based the
 | Keybind                       | Action                              |
 |-------------------------------|-------------------------------------|
 | SUPER + T                     | Open terminal special workspace     |
-| SUPER + SHIFT + T             | Open terminal                       |
+| SUPER + B                     | Open browser                        |
+| SUPER + E                     | Open file explorer                  |
+| SUPER + Q                     | Open notifications panel            |
+| SUPER + M                     | Open emoji selector                 |
+| SUPER + Space                 | Open app launcher                   |
 | SUPER + C                     | Kill active window                  |
+| SUPER + F4                    | Exit session                        |
 | SUPER + V                     | Toggle floating                     |
 | SUPER + P                     | Toggle pseudo                       |
-| SUPER + J                     | Swap split direction                |
-| SUPER + A                     | Swap split positions                |
-| SUPER + B                     | Open browser                        |
-| SUPER + L                     | Lock screen                         |
-| SUPER + Q                     | Open notifications panel            |
-| SUPER + SHIFT + S             | Run Hyprshot region mode            |
-| SUPER + Space                 | Open app launcher                   |
-| SUPER + M                     | Open emoji selector                 |
-| SUPER + SHIFT + B             | Open web search bar                 |
-| SUPER + SHIFT + [h/j/k/l]     | Move window focus                   |
+| SUPER + A                     | Swap next window                    |
+| SUPER + U                     | Increase split ratius               |
+| SUPER + [h/j/k/l]             | Move window focus                   |
 | SUPER + [0-9]                 | Switch between workspaces           |
+| SUPER + SHIFT + T             | Open terminal                       |
+| SUPER + SHIFT + B             | Open web search bar                 |
+| SUPER + SHIFT + L             | Lock screen                         |
+| SUPER + SHIFT + A             | Swap previous window                |
+| SUPER + SHIFT + U             | Decrease split radius               |
+| SUPER + SHIFT + J             | Toggle split direction              |
+| SUPER + SHIFT + S             | Run Hyprshot region mode            |
 | SUPER + SHIFT + [0-9]         | Move active window to a workspace   |
 | SUPER + [Left Mouse Button]   | Drag to move window                 |
 | SUPER + [Right Mouse Button]  | Drag to resize window               |
