@@ -7,6 +7,7 @@ $username\
 $hostname\
 $directory\
 $git_branch\
+$git_commit\
 $git_status\
 $c\
 $elixir\
@@ -72,11 +73,17 @@ format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
 style = "bg:overlay fg:foam"
 symbol = ""
 
+[git_commit]
+format = "[](fg:overlay)[ 󰜘 $hash ]($style)[](fg:overlay) "
+style = "bg:overlay fg:foam"
+tag_symbol = " 󰓼 "
+only_detached = false
+
 [git_status]
 disabled = false
 style = "bg:overlay fg:love"
 format = '[](fg:overlay)([$all_status$ahead_behind]($style))[](fg:overlay) '
-up_to_date = '[ ✓ ](bg:overlay fg:iris)'
+up_to_date = '[ 󰄭 ](bg:overlay fg:iris)'
 untracked = '[?\($count\)](bg:overlay fg:rose)'
 stashed = '[\$](bg:overlay fg:iris)'
 modified = '[!\($count\)](bg:overlay fg:gold)'
