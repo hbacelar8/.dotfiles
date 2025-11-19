@@ -1,0 +1,3 @@
+function lgg
+    lazygit
+end
