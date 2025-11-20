@@ -13,6 +13,7 @@ Personal dotfiles for [Hyprland](https://hyprland.org/) and Rosé Pine based the
 | SUPER + E                     | Open file explorer                  |
 | SUPER + Q                     | Open notifications panel            |
 | SUPER + M                     | Open emoji selector                 |
+| SUPER + W                     | Open wallpaper selector             |
 | SUPER + Space                 | Open app launcher                   |
 | SUPER + C                     | Kill active window                  |
 | SUPER + F4                    | Exit session                        |
