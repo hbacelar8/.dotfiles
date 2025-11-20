@@ -37,8 +37,8 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: @foam;
-  border-bottom: 2px solid @foam;
+  color: @rose;
+  border-bottom: 2px solid @rose;
   padding-right: 1.3rem;
   padding-left: 1.3rem;
 }
@@ -85,8 +85,8 @@ tooltip {
 
 #custom-gpu,
 #custom-gpu-temp {
-  color: @pine;
-  border-bottom: 2px solid @pine;
+  color: @foam;
+  border-bottom: 2px solid @foam;
 }
 
 #cpu {
